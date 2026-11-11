@@ -1,0 +1,23 @@
+{
+  "ServiceDiscoveryProvider": {
+    "Driver": "HashiCorpConsul",
+    "Settings": {
+      "Address": "https://consul.example.com",
+      "Port": 8501,
+      "SharedConfig": {
+        "Paths": {
+          "Headers": "dev/headers",
+          "MessageBus": "dev/message-bus",
+          "MemoryCache": "dev/memory-cache",
+          "CredentialStore": "dev/secrets-provider"
+        }
+      }
+    },
+    "ServiceConfiguration": {
+      "Name": "backend-example-dev-gxp",
+      "Address": "dcp-dev-gxp.example.com",
+      "Port": 8192,
+      "Tags": [ "gxp", "backend", "example", "dev" ]
+    }
+  }
+}

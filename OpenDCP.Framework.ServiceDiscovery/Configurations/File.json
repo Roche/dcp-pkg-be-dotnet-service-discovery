@@ -1,0 +1,14 @@
+{
+  "ServiceDiscoveryProvider": {
+    "Driver": "File",
+    "Settings": {
+      "Path": "services.json"
+    },
+    "ServiceConfiguration": {
+      "Name": "backend-example-dev-gxp",
+      "Address": "dcp-dev-gxp.example.com",
+      "Port": 8192,
+      "Tags": [ "gxp", "backend", "example", "dev" ]
+    }
+  }
+}
